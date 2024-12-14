@@ -18,19 +18,8 @@ const Skills =()=>{
           {skillsData.map((item,i)=>(
 
             <div key={i} className="skill-content-wrapper-inner-content">
-              <Animate
-                play
-                duration={1}
-                delay={0.3}
-                start={{
-                  transform: 'translateX(-200px)'
-                }}
-
-                end={{
-
-                  transform: 'translateX(0px)'
-                }}
-                >
+              
+                
 
                   <h3 className="skills-content-wrapper-inner-content-categoy-text">{item.label}</h3>
                   <div>
@@ -62,7 +51,7 @@ const Skills =()=>{
                   </div>
 
 
-              </Animate>
+              
             </div>
           ))}
   

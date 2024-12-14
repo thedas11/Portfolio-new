@@ -67,14 +67,30 @@ ul{
 
 } */
 
-.body > h1 {
+/* .bodyh1 {
   color: #8ca16a;
   margin: 0px;
   width: 400px;
   padding-left: 100px;
   font-weight: 900;
   font-size: 10rem;
+} */
+
+.bodyh1animate{
+
+  position: relative;
+  animation: myfirst 2s 1;
+  animation-direction: alternate;
 }
+
+@keyframes myfirst {
+  0%   { left: 0px; top: 0px;}
+  25%  { left: 200px; top: 0px;}
+  50%  { left: 200px; top: 200px;}
+ 
+  100% { left: 0px; top: 0px;}
+}
+
 .body-btn1 {
   padding-right: 151px;
   padding-left: 86px;
@@ -89,10 +105,30 @@ ul{
   border-radius: 5px;
   position: relative;
 
+  
+
+
   &:hover {
     background-color: rgb(98, 119, 56);
   }
 }
+
+.body-btns{
+  animation: Slidebottom 2s 1;
+}
+
+@keyframes Slidebottom{
+
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @keyframes typingeffectAnimation {
   from {
     width: 0%;
@@ -116,8 +152,9 @@ ul{
 
 .body-text {
   color: aquamarine;
-  width: 1000px;
+  width: 1054px;
   position: relative;
+  left: 67px;
 }
 
 .page-head {
@@ -273,6 +310,7 @@ p {
     display: flex;
     padding: 20px;
     gap:20px;
+    animation: slideIn 2s 1;
   
 
   .skill-content-wrapper-inner-content{
@@ -511,3 +549,13 @@ width:750px;
   border-bottom:   1px solid #ffdd40;
   
 }
+
+.shim-Loading{
+ width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+

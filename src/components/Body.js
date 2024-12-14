@@ -12,6 +12,7 @@ useEffect(()=>{
 
     setTimeout(()=>{
         setChangeview(1)
+       
     }, 3000)
  }, [])
 
@@ -19,16 +20,18 @@ useEffect(()=>{
      if(changeview === null)
 
         return(
+            <div className='shim-Loading'>
             <Loding />
+            </div>
         )
     
     return(
         <div className='body'>
 
 
-            <div className='body-text'>
+            <div className=" body-text" >
 
-            <h1>Welcome to my world, I am Soumalya
+            <h1 className='bodyh1animate'>Hello World, I am Soumalya
                 <br />
 
                 Frontend Developer
@@ -37,28 +40,8 @@ useEffect(()=>{
 
             <div className='body-btns'> 
 
-            <Animate
-            play
-            duration={1.5}
-            delay={1}
-            start={{
-                transform: 'translateY(500px)'
-            }}
-
-            end={{
-             transform:  'translateX(0px)'
-            }}
-            >
-
-            {/* */}
-
-            
           <Link to ="/ContactMe" >  <button className= 'body-btn1'>Hire Me</button> </Link>
             
-            
-           
-
-            </Animate >
             </div>
         </div>
     )

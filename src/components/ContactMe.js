@@ -1,10 +1,11 @@
 import PageHeader from "./PageHeader";
-
+import { BsInfoCircle } from "react-icons/bs";
 
 const ContactMe =()=>{
     return(
+
         <div className="ContactMePage">
-            <PageHeader headerText="ContactMe" icon=" " />
+            <PageHeader headerText="ContactMe" icon={<BsInfoCircle size={40} color="yellow" />} />
 
 
 
