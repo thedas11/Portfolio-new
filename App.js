@@ -26,7 +26,7 @@ const routeApp = createBrowserRouter([
     element: <Portapp />,
     children: [
       {
-        path: "/body",
+        path: "/",
         element: <Body />,
       } ,
       
