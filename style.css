@@ -519,8 +519,9 @@ height: 50px;
 .Email{
   border: 1px solid yellow ;
 
-width:750px;
-height: 50px;
+  width:750px;
+  color: aliceblue;
+  height: 50px;
 
 
 }
@@ -529,7 +530,8 @@ height: 50px;
   border: 1px solid yellow ;
 
 
-width:750px;
+  width:750px;
+  color: aliceblue;
   height: 50px;
 
   margin-top: 10px;

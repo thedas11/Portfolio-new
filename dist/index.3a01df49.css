@@ -437,20 +437,15 @@ p {
   width: 100%;
   display: flex;
 
-  & .Name {
+  & .Name, & .Email {
     color: #f0f8ff;
     border: 1px solid #ff0;
     width: 750px;
     height: 50px;
   }
 
-  & .Email {
-    border: 1px solid #ff0;
-    width: 750px;
-    height: 50px;
-  }
-
   & .Phone {
+    color: #f0f8ff;
     border: 1px solid #ff0;
     width: 750px;
     height: 50px;
